@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobFinder | Find Your Dream Job</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">J</span>
+            <span>JobFinder</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-small-title">
+                    🚀 Find your next opportunity
+                </p>
+
+                <h1>
+                    Find a job that
+                    <span>fits your life.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover thousands of job opportunities from
+                    top companies and take the next step in your career.
+                </p>
+
+
+                <!-- SEARCH BOX -->
+
+                <div class="search-box">
+
+                    <div class="search-field">
+                        <span>🔍</span>
+
+                        <div>
+                            <label>Job title</label>
+                            <input
+                                type="text"
+                                id="jobSearch"
+                                placeholder="e.g. Frontend Developer"
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="search-field">
+                        <span>📍</span>
+
+                        <div>
+                            <label>Location</label>
+                            <input
+                                type="text"
+                                id="locationSearch"
+                                placeholder="e.g. Bangalore"
+                            >
+                        </div>
+                    </div>
+
+                    <button
+                        class="search-btn"
+                        onclick="searchJobs()"
+                    >
+                        Search Jobs
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <div class="floating-card card-one">
+                    <span>💼</span>
+                    <div>
+                        <strong>10,000+</strong>
+                        <small>Jobs Available</small>
+                    </div>
+                </div>
+
+                <div class="hero-circle">
+                    👩‍💻
+                </div>
+
+                <div class="floating-card card-two">
+                    <span>🎯</span>
+                    <div>
+                        <strong>95%</strong>
+                        <small>Successful Hiring</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats">
+
+            <div class="stat">
+                <h2>10K+</h2>
+                <p>Jobs Available</p>
+            </div>
+
+            <div class="stat">
+                <h2>5K+</h2>
+                <p>Companies</p>
+            </div>
+
+            <div class="stat">
+                <h2>25K+</h2>
+                <p>Job Seekers</p>
+            </div>
+
+            <div class="stat">
+                <h2>95%</h2>
+                <p>Successful Hiring</p>
+            </div>
+
+        </section>
+
+
+        <!-- ================= JOBS ================= -->
+
+        <section class="jobs-section" id="jobs">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-label">OPPORTUNITIES</p>
+
+                    <h2>
+                        Featured Jobs
+                    </h2>
+
+                    <p>
+                        Explore opportunities from leading companies.
+                    </p>
+                </div>
+
+                <button class="view-all">
+                    View All Jobs →
+                </button>
+
+            </div>
+
+
+            <div class="jobs-container" id="jobsContainer">
+
+                <!-- JOB 1 -->
+
+                <div class="job-card">
+
+                    <div class="company-logo">
+                        G
+                    </div>
+
+                    <div class="job-info">
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>Frontend Developer</h3>
+
+                        <p class="company">
+                            Google
+                        </p>
+
+                        <div class="job-details">
+                            <span>📍 Bangalore</span>
+                            <span>💰 ₹8-12 LPA</span>
+                        </div>
+
+                    </div>
+
+                    <button class="apply-btn">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <!-- JOB 2 -->
+
+                <div class="job-card">
+
+                    <div class="company-logo">
+                        A
+                    </div>
+
+                    <div class="job-info">
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>DevOps Engineer</h3>
+
+                        <p class="company">
+                            Amazon
+                        </p>
+
+                        <div class="job-details">
+                            <span>📍 Hyderabad</span>
+                            <span>💰 ₹10-15 LPA</span>
+                        </div>
+
+                    </div>
+
+                    <button class="apply-btn">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <!-- JOB 3 -->
+
+                <div class="job-card">
+
+                    <div class="company-logo">
+                        M
+                    </div>
+
+                    <div class="job-info">
+
+                        <span class="job-type">
+                            Remote
+                        </span>
+
+                        <h3>Backend Developer</h3>
+
+                        <p class="company">
+                            Microsoft
+                        </p>
+
+                        <div class="job-details">
+                            <span>📍 Remote</span>
+                            <span>💰 ₹9-14 LPA</span>
+                        </div>
+
+                    </div>
+
+                    <button class="apply-btn">
+                        Apply Now
+                    </button>
+
+                </div>
+
+
+                <!-- JOB 4 -->
+
+                <div class="job-card">
+
+                    <div class="company-logo">
+                        T
+                    </div>
+
+                    <div class="job-info">
+
+                        <span class="job-type">
+                            Full Time
+                        </span>
+
+                        <h3>UI/UX Designer</h3>
+
+                        <p class="company">
+                            TCS
+                        </p>
+
+                        <div class="job-details">
+                            <span>📍 Pune</span>
+                            <span>💰 ₹5-8 LPA</span>
+                        </div>
+
+                    </div>
+
+                    <button class="apply-btn">
+                        Apply Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-label">EXPLORE</p>
+
+                    <h2>Popular Categories</h2>
+                </div>
+
+            </div>
+
+
+            <div class="category-container">
+
+                <div class="category-card">
+                    <div>💻</div>
+                    <h3>Technology</h3>
+                    <p>2,500+ Jobs</p>
+                </div>
+
+                <div class="category-card">
+                    <div>📊</div>
+                    <h3>Finance</h3>
+                    <p>1,200+ Jobs</p>
+                </div>
+
+                <div class="category-card">
+                    <div>🎨</div>
+                    <h3>Design</h3>
+                    <p>800+ Jobs</p>
+                </div>
+
+                <div class="category-card">
+                    <div>📱</div>
+                    <h3>Marketing</h3>
+                    <p>1,000+ Jobs</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta">
+
+            <div>
+
+                <p>READY TO START?</p>
+
+                <h2>
+                    Your dream job is
+                    just one click away.
+                </h2>
+
+                <button class="cta-btn">
+                    Find Jobs →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <div class="logo footer-logo">
+                    <span class="logo-icon">J</span>
+                    <span>JobFinder</span>
+                </div>
+
+                <p>
+                    Connecting talented people with
+                    amazing opportunities.
+                </p>
+            </div>
+
+
+            <div>
+                <h4>For Job Seekers</h4>
+
+                <a href="#">Browse Jobs</a>
+                <a href="#">Career Advice</a>
+                <a href="#">Resume Builder</a>
+            </div>
+
+
+            <div>
+                <h4>For Employers</h4>
+
+                <a href="#">Post a Job</a>
+                <a href="#">Find Candidates</a>
+                <a href="#">Pricing</a>
+            </div>
+
+
+            <div>
+                <h4>Company</h4>
+
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 JobFinder. All rights reserved.
+            </p>
+
+            <p>
+                Made with ❤️
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
